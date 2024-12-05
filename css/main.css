@@ -55,68 +55,58 @@
     color: #00bcd4;
   }
   
-  /* Hero Section */
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  /* Page Content */
+  .hero, .page-content {
+    padding-top: 100px;
+    text-align: center;
+  }
+  
   .hero {
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
     color: #fff;
-    padding: 2rem;
   }
   
-  .hero-content {
-    max-width: 700px;
-  }
-  
-  .hero h1 {
+  .hero h1, .page-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
   }
   
-  .hero p {
+  .hero button, .page-content p {
     font-size: 1.25rem;
-    margin-bottom: 2rem;
-  }
-  
-  .hero button {
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #00bcd4;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .hero button:hover {
-    background-color: #0199aa;
   }
   
   /* Responsive Design */
   @media (max-width: 768px) {
     .nav-links {
-      flex-direction: column;
       display: none;
-    }
-  
-    .nav-links.active {
-      display: flex;
+      flex-direction: column;
+      background-color: #333;
+      padding: 1rem;
     }
   
     .menu-toggle {
       display: block;
-      cursor: pointer;
     }
   
-    .menu-toggle span {
-      display: block;
-      height: 3px;
-      width: 25px;
-      background-color: #fff;
-      margin: 5px 0;
+    .nav-links.active {
+      display: flex;
     }
   }

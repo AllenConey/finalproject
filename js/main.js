@@ -1,1 +1,5 @@
-// JS scripts placed here
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+  
