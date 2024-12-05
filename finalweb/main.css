@@ -154,3 +154,34 @@
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
+
+
+  .image-container {
+    align-items: center;
+  }
+  
+  .profile-img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-container {
+      padding: 1.5rem;
+    }
+  
+    .about-container h1 {
+      font-size: 2rem;
+    }
+  
+    .about-container p {
+      font-size: 1rem;
+    }
+  
+    .about-container h2 {
+      font-size: 1.5rem;
+    }
+  }
