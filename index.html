@@ -23,8 +23,39 @@
 </head>
 
 <body>
-  <!-- Place your site's HTML here -->
-  <p>This text will display on your site! Jan 19</p>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-logo">YourBrand</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to YourBrand</h1>
+        <p>Your tagline goes here. A short and impactful message that captures attention.</p>
+        <button>Get Started</button>
+      </div>
+    </section>
+  
+    <script>
+      // Toggle Navigation Menu
+      function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+      }
+    </script>
   <script src="js/main.js"></script>
 </body>
 
