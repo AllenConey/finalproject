@@ -29,5 +29,35 @@
     <h1>Contact Us</h1>
     <p>Feel free to reach out through email or phone. For All Inquiries</p>
   </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <h1>Contact Me</h1>
+      <!-- Contact Form -->
+      <form action="submit_form.php" method="POST" class="contact-form" target="_blank">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+  
+        <label for="message">Comment</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea>
+  
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
